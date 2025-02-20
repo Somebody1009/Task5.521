@@ -1,0 +1,1 @@
+def factorial(n):`n    if n < 0:`n        raise ValueError("Factorial is not defined for negative numbers")`n    if n == 0 or n == 1:`n        return 1`n    return n * factorial(n - 1)`n`ndef is_prime(n):`n    if n < 2:`n        return False`n    for i in range(2, int(n ** 0.5) + 1):`n        if n % i == 0:`n            return False`n    return True
